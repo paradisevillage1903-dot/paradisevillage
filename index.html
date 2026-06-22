@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradise Village | Qəbələdə Premium Kirayə Evlər</title>
+    <!-- Google Fonts & FontAwesome İkonları üçün -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -44,6 +45,15 @@
             color: #1b4332;
             text-decoration: none;
             letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Loqo ilə mətn arasındakı məsafə */
+        }
+
+        .logo img {
+            height: 40px; /* Loqonun hündürlüyü */
+            width: auto;
+            object-fit: contain;
         }
 
         .logo span {
@@ -276,7 +286,7 @@
         footer {
             background: #1b4332;
             color: #fff;
-            padding: 40px 10%px;
+            padding: 40px 10%;
             text-align: center;
             padding-top: 50px;
             padding-bottom: 30px;
@@ -314,7 +324,7 @@
 
         /* Mobil Cihazlar Üçün Uyğunlaşdırma */
         @media (max-width: 768px) {
-            .nav-links { display: none; } /* Sadəlik üçün mobildə menyunu gizlətdik */
+            .nav-links { display: none; }
             .hero h1 { font-size: 2.3rem; }
             .villas-section { padding: 60px 5%; }
             header { padding: 20px 5%; }
@@ -323,6 +333,7 @@
 </head>
 <body>
 
+    <!-- Navigasiya Paneli -->
     <header>
         <a href="#" class="logo">
             <!-- Bura loqo şəklinin linkini və ya adını yazırsan -->
@@ -337,12 +348,14 @@
         </ul>
     </header>
 
+    <!-- Hero Bölməsi -->
     <section class="hero" id="home">
         <h1>Qəbələnin Qəlbində Nağıl Kimi Bir İstirahət</h1>
         <p>Həm təbiətlə iç-içe, həm də ultra-modern lüks villalarımızla unudulmaz Qəbələ istirahətini bu gün bron edin.</p>
         <a href="#villas" class="btn-primary">Evləri Kəşf Et</a>
     </section>
 
+    <!-- Axtarış / Filtrləmə Paneli -->
     <div class="search-container">
         <div class="search-box">
             <label><i class="fa-solid fa-calendar-days"></i> Giriş Tarixi</label>
@@ -367,6 +380,7 @@
         <button class="search-btn">Axtar</button>
     </div>
 
+    <!-- Villalar Siyahısı -->
     <section class="villas-section" id="villas">
         <div class="section-title">
             <h2>Eksklüziv Villalarımız</h2>
@@ -375,6 +389,7 @@
 
         <div class="villas-grid">
             
+            <!-- Villa 1 -->
             <div class="villa-card">
                 <div class="villa-img" style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80');">
                     <div class="price-badge">150 AZN / Gün</div>
@@ -391,6 +406,7 @@
                 </div>
             </div>
 
+            <!-- Villa 2 -->
             <div class="villa-card">
                 <div class="villa-img" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80');">
                     <div class="price-badge">220 AZN / Gün</div>
@@ -407,6 +423,7 @@
                 </div>
             </div>
 
+            <!-- Villa 3 -->
             <div class="villa-card">
                 <div class="villa-img" style="background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80');">
                     <div class="price-badge">180 AZN / Gün</div>
@@ -426,6 +443,7 @@
         </div>
     </section>
 
+    <!-- Footer / Əlaqə -->
     <footer id="contact">
         <div class="footer-content">
             <h3>Paradise Village Qəbələ</h3>
